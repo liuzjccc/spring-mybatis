@@ -1,0 +1,32 @@
+#some local files
+*/.settings/
+.settings/*
+*/.DS_Store
+.DS_Store
+*/.idea/
+.idea/
+/.gradle/*
+gradlew
+gradlew.bat
+unused.txt
+
+# Intellij
+*.iml
+*/*.iml
+
+# Java class files
+/out/*
+*.class
+.classpath
+/build
+
+# Eclipse Project files
+.project
+.settings/
+
+# logs
+/logs/*
+
+# Generated files
+*/bin/
+*/gen/
