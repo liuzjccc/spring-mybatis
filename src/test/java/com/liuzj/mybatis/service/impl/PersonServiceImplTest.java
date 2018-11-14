@@ -20,12 +20,13 @@ public class PersonServiceImplTest {
     @Test
     public void insert() {
         Person person = new Person();
-        person.setId("15");
+        person.setId("65666");
         person.setName("Tom");
         personService.insert(person);
     }
 
     @Test
     public void selectByPrimaryKey() {
+        personService.selectByPrimaryKey("65666");
     }
 }
