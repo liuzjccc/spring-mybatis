@@ -6,6 +6,8 @@ import com.liuzj.mybatis.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author liuzj
  * @date 2018-11-13
@@ -23,5 +25,13 @@ public class PersonServiceImpl implements PersonService {
 
     public Person selectByPrimaryKey(String id) {
         return personMapper.selectByPrimaryKey(id);
+    }
+
+    public List<Person> selectByIds(List<String> ids) {
+        return personMapper.selectByIds(ids);
+    }
+
+    public List<Person> selectByParams(String id, String name) {
+        return personMapper.selectByParams(id,name);
     }
 }
