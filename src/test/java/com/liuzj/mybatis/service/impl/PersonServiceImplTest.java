@@ -35,6 +35,7 @@ public class PersonServiceImplTest {
     @Test
     public void selectByPrimaryKey() {
         personService.selectByPrimaryKey("65666");
+        logger.error("测试123");
     }
 
     @Test

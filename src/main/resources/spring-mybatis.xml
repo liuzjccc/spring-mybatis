@@ -55,7 +55,7 @@
         <!-- MyBatis 插件开发之拦截 StatementHandler 的 prepare 方法-->
         <property name="plugins">
             <array>
-                <bean id="sqlSessionFactory" class="com.liuzj.mybatis.plugin.mybatis.StatementPlugin">
+                <bean id="statementPlugin" class="com.liuzj.mybatis.plugin.mybatis.StatementPlugin">
                     <property name="properties">
                         <map>
                             <entry key="dialect" value="mysql"/>
