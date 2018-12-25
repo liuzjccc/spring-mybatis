@@ -46,7 +46,6 @@ public class NioServer {
                 if (!key.isValid()) { // 忽略无效的 SelectionKey
                     continue;
                 }
-
                 handleKey(key);
             }
         }
